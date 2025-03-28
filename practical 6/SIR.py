@@ -9,15 +9,15 @@ r = 0.05 #recovery probability of an infected person, and is assumed to be immun
 #calculate the infection rate first
 for t in range(1000):
     i=I[-1]/N #infected proportion
-    new_infected = np.random.binomial(S[-1],b*i)
-    new_recover = np.random.binomial(I[-1],r)
-    S.append(S[-1] - new_infected)
-    I.append(I[-1] + new_infected - new_recover)
-    R.append(R[-1] + new_recover)
+    new_infected = np.random.binomial(S[-1],b*i) #randomly select susceptible people to be infected
+    new_recover = np.random.binomial(I[-1],r) #randomly select infected people te be recovered
+    S.append(S[-1] - new_infected) #record today's data of susceptible people
+    I.append(I[-1] + new_infected - new_recover) #record the number of infected people today
+    R.append(R[-1] + new_recover) #record the recovered people today
 
 #draw the graph
 plt.figure(figsize=(10, 6), dpi=150)
-plt.plot(S, label='Susceptible')
+plt.plot(S, label='Susceptible') #set the labels
 plt.plot(I, label='Infected')
 plt.plot(R, label='Recovered')
 plt.xlabel('Time')
