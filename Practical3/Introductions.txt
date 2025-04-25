@@ -2,4 +2,3 @@ Hello, my name is LiuYinuo.
 I like drinking tea and eating chocolate biscuits.
 I am enjoying learning IBI1  
 I am happy that I can push my repo from Visual Studio Code to GitHub
-ok
