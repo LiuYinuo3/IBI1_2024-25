@@ -7,4 +7,4 @@ elif bmi < 18.5:
     category = "underweight"
 else:
     category = "normal"
-print("your bmi is" + str(bmi) + "and you are " + category) 
+print("your bmi is" + str(bmi) + ", you are " + category) 
