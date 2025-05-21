@@ -1,5 +1,5 @@
-weight = float(input("your weight in kg"))
-height = float(input("your height in meter"))
+weight = float(input("your weight in kg: "))
+height = float(input("your height in meter: "))
 bmi = weight / (height**2)
 if bmi > 30:
     category = "obese"
