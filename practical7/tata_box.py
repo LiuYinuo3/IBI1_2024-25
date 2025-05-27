@@ -1,6 +1,4 @@
 import re
-import os
-
 # path
 INPUT_FASTA = r"C:\IBI\IBI1_2024-25\practical7\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
 OUTPUT_FILE = r"C:\IBI\IBI1_2024-25\practical7\tata_genes.fa"
