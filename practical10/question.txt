@@ -1,0 +1,4 @@
+question: is the trend of DALYs the same in China and the UK from 1990 to 2019?
+
+Analysis: DALYs in China show an overall downward trend, while the trend in the UK is relatively stable. 
+The two changes are different.

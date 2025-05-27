@@ -3,7 +3,7 @@ import xml.sax
 from datetime import datetime
 import os
 
-# Fix path issue - use straight quotes and proper path formatting
+# working dictionary
 os.chdir("C:/IBI/IBI1_2024-25/practical14")
 
 XML_FILE = "go_obo.xml"
@@ -13,12 +13,12 @@ def dom_parse():
     start = datetime.now()
     
     try:
-        doc = minidom.parse(XML_FILE)
+        doc = minidom.parse(XML_FILE)#build DOM tree
     except Exception as e:
         print(f"DOM Parsing Error: {e}")
         return {}, 0
     
-    terms = doc.getElementsByTagName("term")
+    terms = doc.getElementsByTagName("term")#get all of the terms
 
     results = {
         "molecular_function": (0, "", ""),
