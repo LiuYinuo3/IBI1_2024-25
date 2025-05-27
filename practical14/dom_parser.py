@@ -152,3 +152,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Based on this run, SAX was faster.
